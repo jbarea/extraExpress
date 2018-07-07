@@ -1,0 +1,20 @@
+<script>
+    var readHeader = function(name,callback){
+        var _request = new XMLHttpRequest();
+        _request.open('HEAD',window.location,true)//el true es porque la peticion va a seer asincrona y se especifica asi en la funcion
+        _request.send(null);
+
+        function bucle(){
+            var header = _request.getResponseHeader(name);
+            setTimeout(function(){
+                if(header) callback(header);
+                else bucle();
+            },50);
+        }
+        bucle();
+    }
+
+    readHeader('x-auth',function (header){
+        alert(header);
+    })
+</script>

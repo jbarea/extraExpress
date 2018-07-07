@@ -1,0 +1,20 @@
+{
+    "development": {
+        "PORT": 3000,
+        "MYSQL": {
+            "host": "localhost",
+            "user": "root",
+            "password": "",
+            "database": "sakila"
+        }
+    },
+    "production": {
+        "PORT": 80,
+        "MYSQL": {
+            "host": "localhost",
+            "user": "root",
+            "password": "",
+            "database": "sakila"
+        }
+    }
+}
