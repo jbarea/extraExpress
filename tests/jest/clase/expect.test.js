@@ -155,6 +155,6 @@ describe("bloque de tests con expect y mocha", ()=>{
             expect(obj).not.toHaveProperty('test');
             expect(obj).toHaveProperty('foo','bar');
             expect(obj).not.toHaveProperty('foo','bar2');
-        })
+         })
     })
 })

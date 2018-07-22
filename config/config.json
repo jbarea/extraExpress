@@ -16,5 +16,14 @@
             "password": "",
             "database": "sakila"
         }
+    },
+    "test": {
+        "PORT": 8080,
+        "MySQL": {
+            "host": "localhost",
+            "user": "root",
+            "password": "",
+            "database": "clasebootcamp"
+        }
     }
 }
